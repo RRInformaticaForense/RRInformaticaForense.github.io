@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RR Informática Forense: servicios particulares de informática forense, evidencia digital, documentación, análisis técnico e informes para abogados, empresas y particulares.">
+  <meta name="keywords" content="informática forense, evidencia digital, análisis forense digital, metadatos, informe técnico, México">
+  <meta name="theme-color" content="#071a33">
+  <title>RR Informática Forense | Evidencia Digital</title>
+  <style>
+    :root{
+      --navy:#071a33;
+      --navy2:#0b2749;
+      --blue:#1598ff;
+      --silver:#d9e0e8;
+      --text:#17212b;
+      --muted:#5c6977;
+      --white:#fff;
+      --bg:#f5f7fa;
+      --line:#dfe5ec;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    header{position:sticky;top:0;z-index:20;background:rgba(7,26,51,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.12)}
+    .nav{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700}
+    .brand img{width:48px;height:48px;object-fit:contain;border-radius:50%}
+    .navlinks{display:flex;gap:22px;font-size:14px;color:#eaf2fb}
+    .navlinks a:hover{color:#53b5ff}
+    .hero{background:linear-gradient(135deg,#06172d 0%,#0b2d53 65%,#0b4172 100%);color:#fff}
+    .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;padding:75px 20px}
+    .eyebrow{color:#59b8ff;text-transform:uppercase;letter-spacing:2px;font-size:13px;font-weight:700}
+    h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin:12px 0 20px}
+    .hero p{font-size:19px;color:#d9e8f7;max-width:650px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700;border:1px solid transparent}
+    .btn-primary{background:#1598ff;color:#fff}
+    .btn-secondary{border-color:#8eb9dc;color:#fff}
+    .logo-box{display:flex;justify-content:center}
+    .logo-box img{width:min(100%,390px);filter:drop-shadow(0 20px 35px rgba(0,0,0,.35))}
+    section{padding:70px 20px}
+    .container{max-width:1120px;margin:auto}
+    .section-title{text-align:center;margin-bottom:40px}
+    .section-title h2{font-size:34px;margin:0 0 8px;color:var(--navy)}
+    .section-title p{color:var(--muted);max-width:720px;margin:auto}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;box-shadow:0 8px 25px rgba(13,35,58,.06)}
+    .card h3{margin-top:0;color:var(--navy)}
+    .icon{font-size:28px}
+    .dark{background:var(--navy);color:#fff}
+    .dark .section-title h2{color:#fff}
+    .dark .section-title p{color:#c7d6e5}
+    .audience{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .audience .card{background:#0d2c4e;color:#fff;border-color:#24486b}
+    .audience .card p{color:#c9d8e7}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{background:#fff;border-radius:14px;padding:22px;border:1px solid var(--line)}
+    .number{width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:12px}
+    .faq{max-width:820px;margin:auto}
+    details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px 20px;margin-bottom:10px}
+    summary{cursor:pointer;font-weight:700;color:var(--navy)}
+    .contact{background:linear-gradient(135deg,#071a33,#0b4172);color:#fff}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+    .contact-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:25px;border-radius:16px}
+    .contact-box p{color:#d9e8f7}
+    .wa{display:inline-block;background:#25d366;color:#fff;padding:13px 20px;border-radius:10px;font-weight:700}
+    footer{background:#041021;color:#b8c7d6;text-align:center;padding:28px 20px;font-size:13px}
+    footer a{color:#fff}
+    .legal{font-size:12px;color:#7890a6;margin-top:12px}
+    @media(max-width:800px){
+      .navlinks{display:none}
+      .hero-inner,.contact-grid{grid-template-columns:1fr}
+      .logo-box{order:-1}
+      .cards,.audience{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:480px){.steps{grid-template-columns:1fr}.hero-inner{padding:55px 18px}section{padding:55px 18px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="#inicio">
+      <img src="logo.png" alt="Logo RR Informática Forense">
+      <span>RR Informática Forense</span>
+    </a>
+    <div class="navlinks">
+      <a href="#servicios">Servicios</a>
+      <a href="#abogados">Abogados</a>
+      <a href="#empresas">Empresas</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Informática forense • Evidencia digital</div>
+      <h1>Evidencia digital, analizada con metodología y documentada con precisión.</h1>
+      <p>Servicios particulares de informática forense y apoyo técnico para abogados, empresas y particulares.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="https://wa.me/527781123274?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20inform%C3%A1tica%20forense." target="_blank" rel="noopener">Solicitar información por WhatsApp</a>
+        <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+    <div class="logo-box"><img src="logo.png" alt="RR Informática Forense"></div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <div class="section-title">
+      <h2>Servicios</h2>
+      <p>El alcance de cada servicio se determina según las características de la información y las necesidades del caso.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">🔎</div><h3>Orientación en evidencia digital</h3><p>Orientación inicial sobre identificación, conservación y documentación de información digital relevante.</p></article>
+      <article class="card"><div class="icon">🛡️</div><h3>Preservación y documentación</h3><p>Apoyo para documentar la información recibida y establecer un proceso ordenado de trabajo.</p></article>
+      <article class="card"><div class="icon">💻</div><h3>Análisis técnico</h3><p>Revisión técnica de archivos, información digital y otros elementos proporcionados para análisis.</p></article>
+      <article class="card"><div class="icon">📋</div><h3>Análisis de metadatos</h3><p>Revisión de metadatos disponibles en archivos digitales, cuando la información permita realizarla.</p></article>
+      <article class="card"><div class="icon">📄</div><h3>Informes técnicos</h3><p>Documentación de metodología, procedimientos, hallazgos y limitaciones conforme al alcance contratado.</p></article>
+      <article class="card"><div class="icon">⚖️</div><h3>Apoyo técnico a abogados</h3><p>Apoyo técnico para comprender, organizar y documentar elementos digitales relacionados con un asunto.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="abogados">
+  <div class="container">
+    <div class="section-title">
+      <h2>Para abogados y despachos</h2>
+      <p>Apoyo técnico para asuntos donde la información digital pueda ser relevante.</p>
+    </div>
+    <div class="audience">
+      <article class="card"><h3>Revisión inicial</h3><p>Analizamos la situación general y delimitamos qué información digital puede ser pertinente.</p></article>
+      <article class="card"><h3>Documentación técnica</h3><p>Organizamos y documentamos los elementos proporcionados para su análisis.</p></article>
+      <article class="card"><h3>Informe técnico</h3><p>Presentamos los procedimientos y hallazgos dentro del alcance acordado, señalando limitaciones.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="empresas">
+  <div class="container">
+    <div class="section-title">
+      <h2>Para empresas y particulares</h2>
+      <p>Atención para situaciones que involucren información o evidencia digital.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="number">1</div><h3>Consulta</h3><p>Nos explicas brevemente la situación.</p></div>
+      <div class="step"><div class="number">2</div><h3>Alcance</h3><p>Definimos qué información y análisis son necesarios.</p></div>
+      <div class="step"><div class="number">3</div><h3>Trabajo técnico</h3><p>Realizamos las actividades acordadas y documentamos el proceso.</p></div>
+      <div class="step"><div class="number">4</div><h3>Entrega</h3><p>Se entrega el resultado correspondiente al servicio contratado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-title">
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Trabajan con abogados?</summary><p>Sí. Ofrecemos apoyo técnico relacionado con información y evidencia digital, de acuerdo con el alcance de cada caso.</p></details>
+      <details><summary>¿Puedo solicitar una consulta inicial?</summary><p>Sí. Puedes contactarnos por WhatsApp para describir brevemente la situación y conocer el alcance posible del servicio.</p></details>
+      <details><summary>¿Debo enviar información sensible por WhatsApp?</summary><p>No es recomendable enviar información sensible antes de establecer el alcance y el medio adecuado para recibirla.</p></details>
+      <details><summary>¿El análisis garantiza un resultado favorable en un juicio?</summary><p>No. Un análisis técnico documenta procedimientos y hallazgos dentro de su alcance; no garantiza una resolución judicial determinada.</p></details>
+      <details><summary>¿Son peritos oficiales?</summary><p>El servicio se ofrece como apoyo particular de informática forense. Cualquier carácter oficial o judicial dependerá de las acreditaciones, nombramientos y requisitos aplicables a cada procedimiento.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow">Contacto</div>
+      <h2>Cuéntanos brevemente tu situación</h2>
+      <p>Para proteger tu información, evita enviar datos sensibles o archivos privados hasta que se haya definido el medio y alcance adecuado.</p>
+    </div>
+    <div class="contact-box">
+      <h3>RR Informática Forense</h3>
+      <p>Servicios particulares de informática forense y evidencia digital.</p>
+      <a class="wa" href="https://wa.me/527781123274?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20un%20servicio%20de%20inform%C3%A1tica%20forense." target="_blank" rel="noopener">💬 Contactar por WhatsApp</a>
+      <p class="legal">WhatsApp: 778 112 3274<br>Atención con cita previa y según disponibilidad.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>RR Informática Forense</strong><br>
+  Evidencia digital, analizada con metodología y documentada con precisión.
+  <div class="legal">La información de este sitio es de carácter informativo. El alcance de cada servicio se define de manera particular y no constituye garantía de resultado judicial.</div>
+</footer>
+</body>
+</html>
